@@ -5,14 +5,15 @@ import java.math.BigDecimal;
 public class Main {
 
     public static void main(String[] args) {
-        Product product = new Product.Builder()
-                .setId(1)
-                .setProductName("koszula")
-                .setPrice(new BigDecimal("4.99"))
-                .setWeight(0.22)
-                .setColor("czerwony")
-                .setProductCount(1)
-                .build();
+        int id = 1;
+        String productName = "koszula";
+        BigDecimal price =new BigDecimal(4.99);
+        double weigth = 0.22;
+        String color = "czerwony";
+        int productCount = 1;
+
+        Product product = new Product(id,productName,price,weigth,color,productCount);
+
         System.out.println(product);
     }
 }
